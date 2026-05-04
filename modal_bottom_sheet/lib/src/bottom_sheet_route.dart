@@ -108,7 +108,7 @@ class _ModalBottomSheetState<T> extends State<_ModalBottomSheet<T>> {
                                 popDisposition == RoutePopDisposition.doNotPop);
                         popDisposition == RoutePopDisposition.doNotPop;
                         if (!shouldClose) {
-                          widget.route.onPopInvoked(false);
+                          widget.route.onPopInvokedWithResult(false, null);
                         }
                         return shouldClose;
                       }
